@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+<!--Opening Page-->    
+    <section class="start-page">
+      <h1>Disney Park Trivia</h1>
+      <form>
+        <div class="button-container">
+          <button type=submit>Let's Play!</button>
+        </div>
+      </form>
+  </header>
+</section>
+
+<!--Questions container to be put into JS later filler question put in for reference-->
+<section class="questions-page">
+  <form>
+    <div class="questions">
+      <h2>1.  What date did Disneyland open?</h2>
+      <input type="radio" name="q1" value="a" id="q1a"/> a.  August 21, 1967<br />
+      <input type="radio" name="q1" value="a" id="q1a"/> b.  June 10, 1958<br />
+      <input type="radio" name="q1" value="a" id="q1a"/> c.  July 17, 1955 <br />
+      <input type="radio" name="q1" value="a" id="q1a"/> d.  February 25, 1960<br />
+    </div>
+    <div class="button-container">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</section>
+
+<!--This loads after answer is submitted-->
+<section class="answer-page">
+  <h2>Your Answer Was Correct/Wrong</h2>
+  <p>Display the Correct Answer Here</p>
+  <form>
+    <div class="button-container">
+      <button type="submit">Next Question</button>
+    </div>  
+  </form>
+</section>
+
+<!--This section loads when Quiz is complete-->
+<section class="quiz-complete">
+  <h1>Congrats!  You Completed the Quiz!</h1>
+  <p>Your score was:</p>
+  <form>
+    <div class="button-container">
+      <button type="submit">Try Again!</button>
+    </div>
+  </form>
+</section>
+
+<!--This is the progress of the quiz displayed at the bottom at all times-->
+<section class="quiz-status">
+  <div class="status-display">
+    <p>Correct: <span class="correct-score">" "</span></p>
+    <p>Wrong: <span class="incorrect-score">" "</span></p>
+    
+  </div>
+</section>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
